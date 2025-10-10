@@ -12,8 +12,10 @@ def calut(num1,num2,/,*,re):
         return f'{num1}*{num2}={num1*num2}'
     elif re=="+":
         return f'{num1}+{num2}={num1+num2}'
-    else:
+    elif re=='-':
         return f'{num1}-{num2}={num1-num2}'
+    else:
+        return None
 
 
 sum=sum_counts(3,4)
@@ -22,5 +24,5 @@ print(sum)
 deta_user=deta(name="ali",age=70)
 print(deta_user)
 
-rusult=calut(3,3,re='+')
+rusult=calut(3,3,re='')
 print(rusult)
